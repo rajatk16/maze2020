@@ -16,6 +16,16 @@
     .hidden {
       display: none !important;
     }
+
+    .info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      z-index: 1;
+      height: 100vh;
+      width: 100vw;
+    }
   </style>
 </head>
 
@@ -45,6 +55,9 @@
       <h1>Merry Christmas!</h1>
       <h2>And A Happy New Year!</h2>
     </div>
+  </div>
+  <div class="info">
+    <h3>Use WASD or Arrow Keys to solve the maze</h3>
   </div>
   <script src="index.js"></script>
 </body>

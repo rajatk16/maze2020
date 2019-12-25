@@ -8,8 +8,8 @@ const {
   Events
 } = Matter;
 
-const cellsHorizontal = 5;
-const cellsVertical = 4;
+const cellsHorizontal = 15;
+const cellsVertical = 15;
 const width = window.innerWidth;
 const height = window.innerHeight;
 
@@ -219,6 +219,7 @@ document.addEventListener('keydown', event => {
   switch (event.keyCode) {
     case 38:
     case 87:
+      document.body.querySelector('.info').classList.add('hidden')
       Body.setVelocity(ball, {
         x,
         y: y - 2
@@ -226,6 +227,7 @@ document.addEventListener('keydown', event => {
       break;
     case 68:
     case 39:
+      document.body.querySelector('.info').classList.add('hidden')
       Body.setVelocity(ball, {
         x: x + 2,
         y
@@ -233,6 +235,7 @@ document.addEventListener('keydown', event => {
       break;
     case 40:
     case 83:
+      document.body.querySelector('.info').classList.add('hidden')
       Body.setVelocity(ball, {
         x,
         y: y + 2
@@ -240,6 +243,7 @@ document.addEventListener('keydown', event => {
       break;
     case 37:
     case 65:
+      document.body.querySelector('.info').classList.add('hidden')
       Body.setVelocity(ball, {
         x: x - 2,
         y
